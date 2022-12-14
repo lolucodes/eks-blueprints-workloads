@@ -1,11 +1,16 @@
 labels:
   env: dev
+
+9
 spec:
   destination:
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/aws-samples/eks-blueprints-workloads
+    # <-- Change with your forked URL -->
+    repoURL: https://github.com/lolucodes/eks-blueprints-workloads
     targetRevision: main
+  ingress:
+    host: dev.example.com
 
   # Thoses default values can be surcharged by Infrastructure as Code
   env: dev
