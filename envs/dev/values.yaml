@@ -1,7 +1,6 @@
 labels:
   env: dev
 
-9
 spec:
   destination:
     server: https://kubernetes.default.svc
